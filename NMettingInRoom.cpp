@@ -1,4 +1,7 @@
- int maxMeetings(int start[], int end[], int n)
+ 
+// BY this you can learn we can add pair of two in the vector . 
+
+int maxMeetings(int start[], int end[], int n)
     {
        vector<pair<int , int >> mp ;
        for(int i= 0 ; i<n ; i++){
