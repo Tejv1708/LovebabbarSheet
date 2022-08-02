@@ -11,6 +11,7 @@ long long int maximizeSum(long long int a[], int n, int k)
     int  sum = 0 ;
     for(int i=0 ; i<n ; i++)
     sum += a[i] ;
+    //This function is used to find minimum element 
     int x = *min_element(a , a+n );
     if(k&1) sum -= 2*x ;
     return sum ;
