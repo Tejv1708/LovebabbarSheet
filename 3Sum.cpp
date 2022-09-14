@@ -1,3 +1,9 @@
+//The naive solution for the duplicates will be using the STL methods like below :
+std::sort(res.begin(), res.end());
+res.erase(unique(res.begin(), res.end()), res.end());
+//But according to my submissions, this way will cause you double your time consuming almostly.
+//A better approach is that, to jump over the number which has been scanned, no matter it is part of some solution or not.
+
 vector<vector<int> > threeSum(vector<int> &num) {
     
     vector<vector<int> > res;
